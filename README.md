@@ -8,8 +8,8 @@ A blockchain source connector for Apache Flink
 * Bitcoin Core or an RPC compatible client such as Litecoin Core or Dash Core.
 
 ## Installation
-1) git clone 
-2) mvn install
+1) git clone https://github.com/Antti-Kaikkonen/FlinkBlockchainSource.git
+2) cd FlinkBlockchainSource && mvn install
 3) include it in your project:
 ```xml
 <dependency>
