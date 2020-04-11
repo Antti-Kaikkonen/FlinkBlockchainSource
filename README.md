@@ -10,7 +10,8 @@ A blockchain source connector for Apache Flink
 ## Installation
 1) `git clone https://github.com/Antti-Kaikkonen/FlinkBlockchainSource.git`
 2) `cd FlinkBlockchainSource && mvn install`
-3) include it in your project:
+3) Create a flink project. An easy way is to use the maven archetype in the [flink java quickstart](https://ci.apache.org/projects/flink/flink-docs-release-1.10/dev/projectsetup/java_api_quickstart.html#maven).
+4) Add FlinkBlockchainSource to your project dependencies (pom.xml):
 ```xml
 <dependency>
     <groupId>io.github.antti-kaikkonen</groupId>
