@@ -47,8 +47,8 @@ public class BlockchainSource extends RichSourceFunction<Block> implements Check
         
         while (isRunning) {
             CompletableFuture<Block> cf = this.workQueue.poll();
-            if (cf == null && blockFetcherThread.isTemporarilyIdle()) {//Empty workQueue and processed blocks to target height
-                ctx.markAsTemporarilyIdle();
+            if (cf == null) {//Empty workQueue and processed blocks to target height
+                if (blockFetcherThread.isTemporarilyIdle()) ctx.markAsTemporarilyIdle();
                 cf = this.workQueue.take();
             }
             Block block = cf.get();
