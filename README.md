@@ -4,7 +4,7 @@ A blockchain source connector for Apache Flink
 ## Prerequisites
 * Java 8 or later
 * Apache Flink 1.10.0 or later
-* Apache maven 3.3 or later
+* Apache Maven 3.3 or later
 * Bitcoin Core or an RPC compatible client such as Litecoin Core or Dash Core.
 
 ## Installation
